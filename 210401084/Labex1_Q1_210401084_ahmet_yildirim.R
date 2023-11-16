@@ -30,3 +30,7 @@ maps$Longitude <- as.numeric(gsub("[EW]", "", maps$Longitude))
 # idx değişkeninde adı geçen satırların değerlerini -1 ile çarpma 1.9
 maps$Longitude[idx] <- maps$Longitude[idx] * -1
 
+#1.10
+finalResult <- data.frame(Longitude = maps$Longitude, Latitude = maps$Latitude, Year = maps$Year)
+
+maps$Year <- as.numeric(as.character(maps$Year))
