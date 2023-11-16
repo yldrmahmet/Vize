@@ -19,3 +19,6 @@ idx <- grep("W", maps$Longitude)
 
 # Longitude sütunundaki "E" ve "W" harflerini silme
 maps$Longitude <- gsub("[EW]", "", maps$Longitude)
+
+# Year sütunundaki "AD" harflerini silme
+maps$Year <- gsub("AD", "", maps$Year)
