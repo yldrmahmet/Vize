@@ -11,3 +11,5 @@ if (dim(maps)[1] == 10 && dim(maps)[2] == 9) {
   cat("Hata: Data frame boyutları beklenen değerlere uymuyor.\n")
 }
 
+# Latitude sütunundaki "N" harflerini silme  1.3
+maps$Latitude <- gsub("N", "", maps$Latitude)
