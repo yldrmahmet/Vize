@@ -13,3 +13,6 @@ if (dim(maps)[1] == 10 && dim(maps)[2] == 9) {
 
 # Latitude sütunundaki "N" harflerini silme  1.3
 maps$Latitude <- gsub("N", "", maps$Latitude)
+
+# Longitude sütunundaki "W" harfi içeren satırların indekslerini bulma 1.4
+idx <- grep("W", maps$Longitude)
