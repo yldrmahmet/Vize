@@ -27,3 +27,6 @@ maps$Year <- gsub("AD", "", maps$Year)
 maps$Latitude <- as.numeric(gsub("[NW]", "", maps$Latitude))
 maps$Longitude <- as.numeric(gsub("[EW]", "", maps$Longitude))
 
+# idx değişkeninde adı geçen satırların değerlerini -1 ile çarpma 1.9
+maps$Longitude[idx] <- maps$Longitude[idx] * -1
+
